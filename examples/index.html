@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <script src="../bower_components/angular/angular.js"></script>
+        <script src="../src/block-ui/block-ui.js"></script>
+        <script src="../src/angular-fn/angular-fn.js"></script>
+        
+        <script src="main.js"></script>
+        
+        <link rel="stylesheet" href="../src/block-ui/block-ui.css">
+        <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+        
+        <style>
+            .col-md-4 {
+                background: #F00;
+            }
+        </style>
+    </head>
+    <body ng-app="appmera">
+        
+        <div ng-controller="MainCtrl">
+            <div class="row">
+                <div class="col-md-4" fn-block-ui="withCustomTemplate" fn-block-ui-template="customTemplate.html" fn-block-ui-message="Hello World!">{{lorem}}</div>
+                <div class="col-md-4" fn-block-ui="withExternalTemplate" fn-block-ui-template="external-template.html">{{lorem}}</div>
+                <div class="col-md-4">{{lorem}}</div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">{{lorem}}</div>
+                <div class="col-md-4" fn-block-ui="deneme">{{lorem}}</div>
+                <div class="col-md-4">{{lorem}}</div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">{{lorem}}</div>
+                <div class="col-md-4">{{lorem}}</div>
+                <div class="col-md-4">{{lorem}}</div>
+            </div>
+        </div>
+        
+        <script id="customTemplate.html" type="text/ng-template">
+            <div class="fn-block-ui-overlay"></div>
+            <div class="fn-block-ui-message-container" aria-live="assertive" aria-atomic="true">
+                <div class="fn-block-ui-message">
+                    <img src="wait.gif" style="width: 30px; height: 30px;" /> {{instance.message}}
+                </div>
+            </div>
+        </script>
+    </body>
+</html>

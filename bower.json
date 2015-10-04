@@ -1,0 +1,41 @@
+{
+    "name": "angular-fn",
+    "version": "0.9",
+    "authors": [
+        "Serdar Kuzucu <serdarkuzucu13@gmail.com>"
+    ],
+    "description": "A useful collection of some angularjs directives, services, and filters.",
+    "main": [
+        "dist/angular-fn.js",
+        "dist/angular-fn.css"
+    ],
+    "moduleType": [],
+    "keywords": [
+        "angular",
+        "angularjs",
+        "javascript",
+        "directive",
+        "service",
+        "filter"
+    ],
+    "license": "MIT",
+    "homepage": "",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "src",
+        "dest",
+        "examples"
+        "/Gruntfile.js",
+        "/package.json",
+        "/README.md"
+    ],
+    "dependencies": {
+        "angular": "~1.4.7"
+    },
+    "devDependencies": {
+        "angular-mocks": "~1.4.7"
+    }
+}
